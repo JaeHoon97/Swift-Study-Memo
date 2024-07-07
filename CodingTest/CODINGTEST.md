@@ -47,7 +47,6 @@ var reverse: String = String(str.reversed())
 // 새롭게 리턴하는 것이 아니라 역순으로 접근하는 방식.
 // 따라서 타입 변환 필요.
 ```
-
 ### 문자를 정수로 변환
 ```swift
 var ch = "10"
@@ -56,6 +55,18 @@ var ch = "10"
 Int(String(ch))!
 // 문자를 문자열로 바꾸고 다시 정수로 바꾼다.
 // 문자에서 정수로 바로 바꾸는 것을 불가 
+```
+### 문자열 바꾸기
+```swift
+str.replacingOccurrences(of: "first", with: "second")
+// 문자열에 있는 "first"을 "second"로 모두 교체 
+```
+### 문자열 대소문자 바꾸기
+```swift
+str.uppercased()
+// 대문자로 변경
+ str.lowercased()
+// 소문자로 변경
 ```
 
 # 기타 Etc
