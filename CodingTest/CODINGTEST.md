@@ -14,6 +14,7 @@ var arr = readLine()!.components(separatedBy: " ").map{Int($0)!}
 ```
 
 # 배열 Array
+
 ### 범위 연산자를 사용한 배열 생성
 ```swift
 let array = Array(1...100)
@@ -21,13 +22,22 @@ let array = Array(1...100)
 let array = Array(stride(from: 1, through: 100, by: 1))
 // 1부터 100까지 1씩 더한 결과를 Array로
 ```
-
+### 정해진 수만큼 반복한 배열 생성 
+```swift
+Array(repeating: num, count: cnt)
+// 원소 num을 cnt만큼 반복한 컬렉션 반환.
+```
 ### 범위 연산자를 사용한 접근
 ```swift
 array[0...10]
 // 0부터 10까지 배열 리턴
-
 ```
+### 배열에 원소 삽입 
+```swift
+arr.append(contentsOf: arr2)
+// arr배열에 arr2배열을 추가
+```
+
 # 문자열 String
 
 ### 문자열 뒤집기
@@ -60,6 +70,12 @@ abs(-7)
 ```swift
 sqrt(9.0)
 // 3
+```
+
+### 소수점 올림
+```swift
+ceil(5.13)
+// 6
 ```
 
 
