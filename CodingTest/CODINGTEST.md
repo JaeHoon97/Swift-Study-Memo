@@ -64,9 +64,9 @@ str.replacingOccurrences(of: "first", with: "second")
 ### 문자열 대소문자 바꾸기
 ```swift
 str.uppercased()
-// 대문자로 변경
- str.lowercased()
-// 소문자로 변경
+// 문자열 str을 대문자로 변경
+str.lowercased()
+// 문자열 str을 소문자로 변경
 ```
 
 # 기타 Etc
