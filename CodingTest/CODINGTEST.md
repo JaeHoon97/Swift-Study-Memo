@@ -37,6 +37,12 @@ array[0...10]
 arr.append(contentsOf: arr2)
 // arr배열에 arr2배열을 추가
 ```
+### 인덱스와 값을 가지고있는 순서쌍 배열
+```swift
+arr.enumerated()
+// arr배열을 (offset, element) tuple 타입의 배열로 반환
+```
+
 
 # 문자열 String
 
@@ -47,9 +53,9 @@ var reverse: String = String(str.reversed())
 // 새롭게 리턴하는 것이 아니라 역순으로 접근하는 방식.
 // 따라서 타입 변환 필요.
 ```
-### 문자를 정수로 변환
+### 문자(문자열 X)를 정수로 변환
 ```swift
-var ch = "10"
+var ch = "1"
 (ch.wholeNumberValue)!
 // 옵셔널 해제 필요.
 Int(String(ch))!
