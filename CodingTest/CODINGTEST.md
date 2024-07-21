@@ -10,9 +10,14 @@ var input = Int(readLine()!)!
 ```
 #### 공백 있는 숫자 입력 받기 return type: [Int]
 ```swift
+// 단일 요소의 구분자
 var arr = readLine()!.components(separatedBy: " ").map{Int($0)!} 
 ```
-
+#### 공백 있는 숫자 입력 받기 return type: [Int]
+```swift
+// []을 사용하여 여러 개의 구분자 설정
+var arr = readLine()!.components(separatedBy: [" "]).map{Int($0)!} 
+```
 # 배열 Array
 
 #### 범위 연산자를 사용한 배열 생성
@@ -44,7 +49,13 @@ arr.append(contentsOf: arr2)
 arr.enumerated()
 // arr배열을 (offset, element) tuple 타입의 배열로 반환
 ```
-
+#### 처음과 마지막 원소 제거(반드시 빈 배열 여부 체크!)
+```swift
+// 배열의 첫 번째 원소 제거 후 해당 원소 값 리턴
+arr.removeFirst()
+// 배열의 마지막 원소 제거 후 해당 원소 값 리턴
+arr.removeLast()
+```
 
 # 문자열 String
 
