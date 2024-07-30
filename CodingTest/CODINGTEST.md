@@ -1,4 +1,5 @@
-# 입력 Input
+입력 Input
+==========
 
 #### 기본 입력
 ```swift
@@ -18,7 +19,9 @@ var arr = readLine()!.components(separatedBy: " ").map{Int($0)!}
 // []을 사용하여 여러 개의 구분자 설정
 var arr = readLine()!.components(separatedBy: [" "]).map{Int($0)!} 
 ```
-# 배열 Array
+
+배열 Array
+==========
 
 #### 범위 연산자를 사용한 배열 생성
 ```swift
@@ -56,8 +59,21 @@ arr.removeFirst()
 // 배열의 마지막 원소 제거 후 해당 원소 값 리턴
 arr.removeLast()
 ```
+#### 배열의 최소, 최대 
+```swift
+// arr배열 최솟값
+arr.min()
+// arr배열 최댓값
+arr.max()
+```
+#### 배열 요소 교환 
+```swift
+// arr의 first과 second의 인덱스에 있는 원소들을 교환
+arr.swapAt(first, second)
+```
 
-# 문자열 String
+문자열 String
+==============
 
 #### 문자열 뒤집기
 ```swift
@@ -103,7 +119,8 @@ str.suffix(n)
 ```
 
 
-# 기타 Etc
+기타 Etc
+========
 
 #### 절대값
 ```swift
@@ -122,8 +139,3 @@ sqrt(9.0)
 ceil(5.13)
 // 6
 ```
-
-
-
-
-
