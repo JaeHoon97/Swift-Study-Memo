@@ -71,6 +71,13 @@ arr.max()
 // arr의 first과 second의 인덱스에 있는 원소들을 교환
 arr.swapAt(first, second)
 ```
+#### 배열의 값을 조회하고 해당하는 인덱스를 반환
+```swift
+// 배열의 시작부터 조회해서 값이 2인 인덱스를 리턴
+arr.firstIndex(of: 2)
+// 배열의 끝부터 조회해서 값이 2인 인덱스를 리턴
+arr.lastIndex(of: 2)
+```
 
 문자열 String
 ==============
@@ -103,6 +110,7 @@ str.uppercased()
 // 문자열 str을 소문자로 변경
 str.lowercased()
 ```
+
 #### 접두사, 접미사 체크하기
 ```swift
 // 문자열 input이 str의 접두사인지 체크하고 Bool반환 
@@ -110,12 +118,19 @@ str.hasPrefix(input)
 // 문자열 input이 str의 접미사인지 체크하고 Bool반환 
 str.hasSuffix(input)
 ```
+
 #### 문자열의 부분 가져오기
 ```swift
 // 문자열 str의 앞에서부터 n개의 문자를 반환 
 str.prefix(n)
 // 문자열 str의 뒤에서부터 n개의 문자를 반환 
 str.suffix(n)
+```
+
+#### 문자를 아스키코드로 변환하기
+```swift
+// Char 타입의 문자를 ascii 정수로 변환 
+let ascii = Int(UnicodeScalar(String(ch))!.value)
 ```
 
 
