@@ -21,8 +21,9 @@ Int(String(ch))!
 
 #### 문자열 바꾸기
 ```swift
+// 문자열에 있는 "first"을 "second"로 모두 교체
+// 반환타입은 String
 str.replacingOccurrences(of: "first", with: "second")
-// 문자열에 있는 "first"을 "second"로 모두 교체 
 ```
 
 #### 문자열 대소문자 바꾸기
