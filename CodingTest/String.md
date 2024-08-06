@@ -50,6 +50,17 @@ str.prefix(n)
 str.suffix(n)
 ```
 
+#### 문자열 정렬하기
+```swift
+// 주의! 반환 타입이 String이 아니라 String.Element
+// String.Element은 Character이랑 같음
+
+// 문자열 str을 오름차순 정렬. 원본 변경 X
+str.sorted()
+// 문자열 str을 오름차순 정렬. 원본 변경 O
+str.sort()
+```
+
 #### 문자를 아스키코드로 변환하기
 ```swift
 // Char 타입의 문자를 ascii 정수로 변환 
