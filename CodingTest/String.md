@@ -26,6 +26,16 @@ Int(String(ch))!
 str.replacingOccurrences(of: "first", with: "second")
 ```
 
+#### 정해진 범위의 문자열 바꾸기
+```swift
+// 시작 인덱스 설정 
+var startIndex = str.index(str.startIndex, offsetBy: 0)
+// 마지막 인덱스 설정
+var endIndex = str.index(str.startIndex, offsetBy: 7)
+// 문자열 str의 startIndex..<endIndex 범위에 있는 문자열을 str2로 교체
+str.replaceSubrange(startIndex..<endIndex, with: str2)
+```
+
 #### 문자열 대소문자 바꾸기
 ```swift
 // 문자열 str을 대문자로 변경
